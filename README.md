@@ -1,15 +1,14 @@
-Backtracking Maze Solver
-------------------------
+# Backtracking Maze Solver
 
 This maze solver was developed for Growth Acceleration Partners Code Hunt presented in RubyConfCo.
 
 This readme explains how to run the code, and the process to solve the code hunt, as well as additional comments regarding the current implementation and possible improvements.
 
-# Installing
+## Installing
 
 Just download the code and make sure your ruby version management tool install the version of ruby used by the project by parsing the .ruby-version file
 
-# Running
+## Running
 
 The project can be run by making the maze.rb file executable and running it or by passing it as argument to the ruby interpreter. The program takes the following arguments:
 
@@ -28,7 +27,7 @@ Examples for running the provided samples and maze files:
 
 `ruby maze.rb maps/Hound\ Maze\(tsv\).txt 54 77 12 20`
 
-# Solving process
+## Solving process
 
 1. Follow the link: https://goo.gl/gWAajd: Got redirected to a page (https://s3-us-west-2.amazonaws.com/raffle.wearegap.com/code/code.txt) with the following text:
 
@@ -61,7 +60,7 @@ Examples for running the provided samples and maze files:
 
 6. Iterate over the code adapting it to the use case (mainly changing parsing), and fixing some implementation issues regarding maze borders and open rooms
 
-# Additional Comments
+## Additional Comments
 
 Is important to note the this codes provides a solution, not the fastest nor the shortest path solution, just one possible solution.
 
