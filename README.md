@@ -5,11 +5,11 @@ This maze solver was developed for Growth Acceleration Partners Code Hunt presen
 
 This readme explains how to run the code, and the process to solve the code hunt, as well as additional comments regarding the current implementation and possible improvements.
 
-1. Installing
+# Installing
 
 Just download the code and make sure your ruby version management tool install the version of ruby used by the project by parsing the .ruby-version file
 
-2. Running
+# Running
 
 The project can be run by making the maze.rb file executable and running it or by passing it as argument to the ruby interpreter. The program takes the following arguments:
 
@@ -20,18 +20,26 @@ The project can be run by making the maze.rb file executable and running it or b
 * houndX and houndY are the X and Y initial coordinates for the hound
 * preyX and preyY are the X and Y coordinates of the prey
 
-3. Solving process
+Examples for running the provided samples and maze files:
 
-* Follow the link: https://goo.gl/gWAajd: Got redirected to a page (https://s3-us-west-2.amazonaws.com/raffle.wearegap.com/code/code.txt) with the following text:
+`ruby maze.rb --play-search maps/Sample1\(tsv\).txt 25 0 13 11`
+
+`ruby maze.rb --play-search maps/Sample2\(tsv\).txt 25 16 7 5`
+
+`ruby maze.rb maps/Hound\ Maze\(tsv\).txt 54 77 12 20`
+
+# Solving process
+
+1. Follow the link: https://goo.gl/gWAajd: Got redirected to a page (https://s3-us-west-2.amazonaws.com/raffle.wearegap.com/code/code.txt) with the following text:
 
 > R0FQIGlzIGhpcmluZyBhbmQgYWx3YXlzIGxvb2tpbmcgZm9yIHRoZSBiZXN0IGVuZ2luZWVycyEgSWYgeW91IGhhdmUgLk5FVCBleHBlcmllbmNlIGFuZCBjYW4gc3BlYWsgRW5nbGlzaCwgcGxlYXNlIHNob3cgdXAhIFdlIHdhbnQgdG8gbWVldCB5b3UuIA0KQW5kIGJ5IHRoZSB3YXksIGlmIHlvdSB3YW50IHRvIHBhcnRpY2lwYXRlIGluIGEgTmludGVuZG8gU3dpdGNoIFJhZmZsZSwgZm9sbG93IHRoaXMgbGluayEgaHR0cDovL3JhZmZsZS53ZWFyZWdhcC5jb20vcmFmZmxlX3J1bGVzLmh0bWw=
 
-* Decoded the string using a base64 decoder which translated to:
+2. Decoded the string using a base64 decoder which translated to:
 
 > GAP is hiring and always looking for the best engineers! If you have .NET experience and can speak English, please show up! We want to meet you. 
 > And by the way, if you want to participate in a Nintendo Switch Raffle, follow this link! http://raffle.wearegap.com/raffle_rules.html
 
-*  Went to the URL and got a QR Code, which decoded to:
+3.  Went to the URL and got a QR Code, which decoded to:
 
 > You find yourself in an odd situation. You are a hound and your master just shoot down your next meal. This is a pretty standard situation except for the fact that you are trapped in a maze. Use your nose to find the prey and come back to your master with a map showing how to get there.  
 >
@@ -47,15 +55,14 @@ The project can be run by making the maze.rb file executable and running it or b
 }
 ```
 
-* Download the ZIP File to take a look at its contents.
+4. Download the ZIP File to take a look at its contents.
 
-* Optimize engineering time by looking if there is an existing solution that works for the given problem. Found one on https://defuse.ca/blog/ruby-maze-solver.html, which I took as starting point
+5. Optimize engineering time by looking if there is an existing solution that works for the given problem. Found one on https://defuse.ca/blog/ruby-maze-solver.html, which I took as starting point
 
-* Iterate over the code adapting it to the use case (mainly changing parsing), and fixing some implementation issues regarding maze borders and open rooms
+6. Iterate over the code adapting it to the use case (mainly changing parsing), and fixing some implementation issues regarding maze borders and open rooms
 
-4. Additional Comments
+# Additional Comments
 
 Is important to note the this codes provides a solution, not the fastest nor the shortest path solution, just one possible solution.
 
 This implementation could also be improved in a lot of ways, even using the same backtracking algorithm. For one the solution path can be straightened over rooms to take the shortest path across the room. It could also can be improved to go over the whole room before exiting it, which is the actual patterns used by search and rescue teams.
-
