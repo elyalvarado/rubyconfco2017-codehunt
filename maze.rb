@@ -158,7 +158,8 @@ class MazeSolver
     maze_string.gsub!(PREY_CHAR,"🦆 ")
     maze_string.gsub!(SPACE_CHAR,"⬛ ")
     maze_string.gsub!(WALL_CHAR,"⬜ ")
-    maze_string end
+    maze_string
+  end
 
 end
 

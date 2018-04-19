@@ -59,3 +59,7 @@ Is important to note the this codes provides a solution, not the fastest nor the
 
 This implementation could also be improved in a lot of ways, even using the same backtracking algorithm. For one the solution path can be straightened over rooms to take the shortest path across the room. It could also can be improved to go over the whole room before exiting it, which is the actual patterns used by search and rescue teams.
 
+5. Enjoy the solution of the first maze on a video:
+
+[![asciicast](https://asciinema.org/a/JVt9p9FcWW1RKiJNmmXpC2Mpq.png)](https://asciinema.org/a/JVt9p9FcWW1RKiJNmmXpC2Mpq)
+
